@@ -9,7 +9,7 @@ export function Hero() {
     >
       <div className="flex items-start gap-4 sm:gap-6">
         {content.portrait ? (
-          <div className="mt-1 h-16 w-16 shrink-0 overflow-hidden rounded-full ring-1 ring-sky-400/40 sm:mt-2 sm:h-20 sm:w-20">
+          <div className="mt-1 h-20 w-20 shrink-0 overflow-hidden rounded-full ring-1 ring-sky-400/40 sm:mt-2 sm:h-24 sm:w-24">
             <Image
               src={content.portrait}
               alt={content.name}

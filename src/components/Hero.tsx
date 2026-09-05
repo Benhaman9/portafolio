@@ -18,9 +18,6 @@ export function Hero() {
       <p className="mt-6 max-w-2xl border-l-2 border-sky-500/60 pl-4 text-base leading-relaxed text-zinc-200 sm:text-lg">
         {content.aiSubtitle}
       </p>
-      <p className="mt-5 max-w-2xl text-sm leading-relaxed text-zinc-400 sm:text-base">
-        {content.aiFraming}
-      </p>
       <div className="mt-8 flex flex-wrap gap-3">
         <a
           href="#proyectos"

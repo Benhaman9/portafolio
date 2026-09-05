@@ -93,7 +93,7 @@ export const content: SiteContent = {
       name: "Cotidie",
       tagline: "Oración y Plan de Vida en el bolsillo, sin depender de internet.",
       description:
-        "Aplicación católica de oración y vida espiritual (Plan de Vida de San Josemaría, oraciones, santoral, lectores EPUB, audios, recordatorios y widgets). Funciona offline tras instalarse. Empezó el 3 de octubre de 2025; versión actual ~6.4.19, con APK Android y PWA. Ideada y dirigida por Benjamín y construida en colaboración intensa con asistentes de IA. El ecosistema incluye un sitio de instalación/presentación y Cotidie Novum, un actualizador Android que descarga releases verificados desde GitHub.",
+        "App católica de oración y Plan de Vida (oraciones, santoral, EPUB, audios, recordatorios y widgets) que funciona offline. Disponible como APK Android y PWA; ideada y dirigida por Benjamín con asistencia de IA. Incluye Cotidie Novum, un actualizador que descarga releases verificados desde GitHub.",
       role: "Ideación, dirección y construcción con asistencia de IA",
       tech: [
         "Next.js 15",
@@ -126,7 +126,7 @@ export const content: SiteContent = {
       tagline:
         "Escritura privada offline-first, con sync, comentarios y autoalojamiento.",
       description:
-        "Plataforma para escribir en Android sin conexión, sincronizar capítulos, compartir con permisos (leer/comentar/sugerir/editar) y exportar TXT/Markdown/PDF. Cliente Flutter local-first (SQLite + cola) y API FastAPI con Postgres. MVP en producción (Render + Supabase + Resend). Ideado a partir de su práctica de escritura; implementación con asistencia de IA.",
+        "Plataforma para escribir en Android sin conexión, sincronizar capítulos, compartir con permisos (leer/comentar/sugerir/editar) y exportar TXT/Markdown/PDF. Cliente Flutter local-first (SQLite + cola) y API FastAPI con Postgres; MVP en producción. Ideado desde su práctica de escritura; implementación con asistencia de IA.",
       role: "Ideación, dirección y construcción con asistencia de IA",
       tech: [
         "Flutter",
@@ -151,7 +151,7 @@ export const content: SiteContent = {
       name: "El Markot",
       tagline: "De manuscrito/EPUB a libro maquetado con Typst.",
       description:
-        "Pipeline editorial para la novela El Markot: Typst (contenido separado de metadata/plantilla) + scripts Python para importar EPUB y compilar. Une worldbuilding con tooling. Autoría literaria de Benjamín; maquetación con asistencia de IA. Sin spoilers.",
+        "Pipeline editorial para la novela El Markot: Typst (contenido separado de metadata/plantilla) y scripts Python para importar EPUB y compilar. Une worldbuilding con tooling; autoría de Benjamín, maquetación con asistencia de IA. Sin spoilers.",
       role: "Ideación, dirección y construcción con asistencia de IA",
       tech: ["Typst", "Python"],
       status: "Libro estructurado completo; builds locales",

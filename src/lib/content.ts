@@ -24,6 +24,7 @@ export type Project = {
 export type SiteContent = {
   name: string;
   initials: string;
+  portrait?: string;
   location: string;
   role: string;
   availability: string;
@@ -57,6 +58,7 @@ export type SiteContent = {
 export const content: SiteContent = {
   name: "Benjamín Alcalde",
   initials: "BA",
+  portrait: "/images/benjamin-portrait.jpg",
   location: "Santiago, Chile",
   role:
     "Estudiante de Ingeniería Comercial (Universidad de los Andes, ingreso 2026) · tecnología, programación y escritura",
@@ -158,9 +160,9 @@ export const content: SiteContent = {
         { label: "API", href: "https://inspirat-api.onrender.com" },
       ],
       logo: "/images/inspirat-logo.png",
-      image: "/images/inspirat-logo.png",
-      imageAlt: "Logo de inspíraT",
-      visualKind: "logo",
+      image: "/images/inspirat-shot-1.png",
+      imageAlt: "Pantalla de inspíraT en Android",
+      visualKind: "phone",
     },
     {
       id: "el-markot",

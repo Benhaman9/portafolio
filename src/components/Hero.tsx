@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { content } from "@/lib/content";
 
 export function Hero() {
@@ -7,12 +8,25 @@ export function Hero() {
       className="mx-auto max-w-5xl px-4 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-20"
     >
       <div className="flex items-start gap-4 sm:gap-6">
-        <div
-          className="mt-1 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-sky-500/15 text-lg font-semibold tracking-[0.12em] text-sky-300 ring-1 ring-sky-400/40 sm:mt-2 sm:h-20 sm:w-20 sm:text-xl"
-          aria-hidden
-        >
-          {content.initials}
-        </div>
+        {content.portrait ? (
+          <div className="mt-1 h-16 w-16 shrink-0 overflow-hidden rounded-full ring-1 ring-sky-400/40 sm:mt-2 sm:h-20 sm:w-20">
+            <Image
+              src={content.portrait}
+              alt={content.name}
+              width={160}
+              height={160}
+              className="h-full w-full object-cover"
+              priority
+            />
+          </div>
+        ) : (
+          <div
+            className="mt-1 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-sky-500/15 text-lg font-semibold tracking-[0.12em] text-sky-300 ring-1 ring-sky-400/40 sm:mt-2 sm:h-20 sm:w-20 sm:text-xl"
+            aria-hidden
+          >
+            {content.initials}
+          </div>
+        )}
         <div className="min-w-0">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-sky-400/90 sm:text-sm">
             {content.location}

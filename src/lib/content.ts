@@ -3,6 +3,8 @@ export type ProjectLink = {
   href: string;
 };
 
+export type ProjectVisualKind = "phone" | "cover" | "logo";
+
 export type Project = {
   id: string;
   name: string;
@@ -13,10 +15,15 @@ export type Project = {
   status: string;
   links: ProjectLink[];
   privateNote?: string;
+  logo?: string;
+  image?: string;
+  imageAlt?: string;
+  visualKind?: ProjectVisualKind;
 };
 
 export type SiteContent = {
   name: string;
+  initials: string;
   location: string;
   role: string;
   availability: string;
@@ -49,6 +56,7 @@ export type SiteContent = {
 
 export const content: SiteContent = {
   name: "Benjamín Alcalde",
+  initials: "BA",
   location: "Santiago, Chile",
   role:
     "Estudiante de Ingeniería Comercial (Universidad de los Andes, ingreso 2026) · tecnología, programación y escritura",
@@ -119,6 +127,10 @@ export const content: SiteContent = {
         { label: "App", href: "https://github.com/CotidieApp/pwa" },
         { label: "Novum", href: "https://github.com/CotidieApp/cotidie-novum" },
       ],
+      logo: "/images/cotidie-logo.png",
+      image: "/images/cotidie-shot-1.png",
+      imageAlt: "Pantalla de inicio de Cotidie",
+      visualKind: "phone",
     },
     {
       id: "inspirat",
@@ -145,6 +157,10 @@ export const content: SiteContent = {
         { label: "Código", href: "https://github.com/CotidieApp/inspirat" },
         { label: "API", href: "https://inspirat-api.onrender.com" },
       ],
+      logo: "/images/inspirat-logo.png",
+      image: "/images/inspirat-logo.png",
+      imageAlt: "Logo de inspíraT",
+      visualKind: "logo",
     },
     {
       id: "el-markot",
@@ -157,6 +173,9 @@ export const content: SiteContent = {
       status: "Libro estructurado completo; builds locales",
       links: [],
       privateNote: "Proyecto privado",
+      image: "/images/markot-cover.png",
+      imageAlt: "Portada de El Markot: Eclest y los Diez Reinos",
+      visualKind: "cover",
     },
   ],
 };

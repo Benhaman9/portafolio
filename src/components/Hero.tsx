@@ -6,12 +6,22 @@ export function Hero() {
       id="inicio"
       className="mx-auto max-w-5xl px-4 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-20"
     >
-      <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-sky-400/90 sm:text-sm">
-        {content.location}
-      </p>
-      <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl lg:text-6xl">
-        {content.name}
-      </h1>
+      <div className="flex items-start gap-4 sm:gap-6">
+        <div
+          className="mt-1 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-sky-500/15 text-lg font-semibold tracking-[0.12em] text-sky-300 ring-1 ring-sky-400/40 sm:mt-2 sm:h-20 sm:w-20 sm:text-xl"
+          aria-hidden
+        >
+          {content.initials}
+        </div>
+        <div className="min-w-0">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-sky-400/90 sm:text-sm">
+            {content.location}
+          </p>
+          <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl lg:text-6xl">
+            {content.name}
+          </h1>
+        </div>
+      </div>
       <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-400 sm:text-lg">
         {content.role}
       </p>

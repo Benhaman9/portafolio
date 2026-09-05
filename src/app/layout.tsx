@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://benjaminalcalde.vercel.app"),
   title: `${content.name} · Portafolio`,
   description: content.shortBio,
   authors: [{ name: content.name }],
@@ -22,6 +23,21 @@ export const metadata: Metadata = {
     description: content.aiSubtitle,
     locale: "es_CL",
     type: "website",
+    url: "https://benjaminalcalde.vercel.app",
+    images: [
+      {
+        url: "/images/cotidie-shot-1.png",
+        width: 720,
+        height: 1612,
+        alt: "Cotidie — pantalla de inicio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${content.name} · Portafolio`,
+    description: content.aiSubtitle,
+    images: ["/images/cotidie-shot-1.png"],
   },
 };
 

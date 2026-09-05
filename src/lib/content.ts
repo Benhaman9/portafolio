@@ -63,12 +63,12 @@ export const content: SiteContent = {
   availability:
     "Disponibilidad híbrida/presencial; medio tiempo en semestre, tiempo completo en vacaciones",
   shortBio:
-    "Estudiante chileno interesado en tecnología, programación y escritura. Disfruta construir proyectos, automatizar tareas y explorar cómo las herramientas digitales resuelven problemas de forma práctica.",
+    "Soy estudiante chileno interesado en tecnología, programación y escritura. Me gusta construir proyectos, automatizar tareas y explorar cómo las herramientas digitales resuelven problemas de forma práctica.",
   aiFraming:
-    "Todavía no programa “de memoria” como un ingeniero de software tradicional: estudia Ingeniería Comercial y construye software dirigiendo ideas con asistencia de IA. El portafolio muestra productos reales —apps, APIs, pipelines— donde él define el problema, la experiencia y el criterio, y colabora con modelos para convertir eso en herramientas que usa de verdad.",
+    "Todavía no programo “de memoria” como un ingeniero de software tradicional: estudio Ingeniería Comercial y construyo software dirigiendo ideas con asistencia de IA. Este portafolio muestra productos reales —apps, APIs, pipelines— donde yo defino el problema, la experiencia y el criterio, y colaboro con modelos para convertir eso en herramientas que uso de verdad.",
   aiSubtitle:
     "Aprendo construyendo: ideo, dirijo y valido; la IA me ayuda a implementar.",
-  projectRoleLine: "Ideación, dirección y construcción con asistencia de IA",
+  projectRoleLine: "Ideé, dirigí y construí con asistencia de IA",
   email: "balcaldegm@gmail.com",
   social: {
     linkedin:
@@ -101,8 +101,8 @@ export const content: SiteContent = {
       name: "Cotidie",
       tagline: "Oración y Plan de Vida en el bolsillo, sin depender de internet.",
       description:
-        "App católica de oración y Plan de Vida (oraciones, santoral, EPUB, audios, recordatorios y widgets) que funciona offline. Disponible como APK Android y PWA; ideada y dirigida por Benjamín con asistencia de IA. Incluye Cotidie Novum, un actualizador que descarga releases verificados desde GitHub.",
-      role: "Ideación, dirección y construcción con asistencia de IA",
+        "App católica de oración y Plan de Vida (oraciones, santoral, EPUB, audios, recordatorios y widgets) que funciona offline. La lancé como APK Android y PWA; la ideé y dirigí con asistencia de IA. Incluye Cotidie Novum, un actualizador que descarga releases verificados desde GitHub.",
+      role: "Ideé, dirigí y construí con asistencia de IA",
       tech: [
         "Next.js 15",
         "React",
@@ -138,8 +138,8 @@ export const content: SiteContent = {
       tagline:
         "Escritura privada offline-first, con sync, comentarios y autoalojamiento.",
       description:
-        "Plataforma para escribir en Android sin conexión, sincronizar capítulos, compartir con permisos (leer/comentar/sugerir/editar) y exportar TXT/Markdown/PDF. Cliente Flutter local-first (SQLite + cola) y API FastAPI con Postgres; MVP en producción. Ideado desde su práctica de escritura; implementación con asistencia de IA.",
-      role: "Ideación, dirección y construcción con asistencia de IA",
+        "Plataforma para escribir en Android sin conexión, sincronizar capítulos, compartir con permisos (leer/comentar/sugerir/editar) y exportar TXT/Markdown/PDF. Cliente Flutter local-first (SQLite + cola) y API FastAPI con Postgres; MVP en producción. La ideé desde mi propia práctica de escritura e implementé con asistencia de IA.",
+      role: "Ideé, dirigí y construí con asistencia de IA",
       tech: [
         "Flutter",
         "Riverpod",
@@ -167,8 +167,8 @@ export const content: SiteContent = {
       name: "El Markot",
       tagline: "De manuscrito/EPUB a libro maquetado con Typst.",
       description:
-        "Pipeline editorial para la novela El Markot: Typst (contenido separado de metadata/plantilla) y scripts Python para importar EPUB y compilar. Une worldbuilding con tooling; autoría de Benjamín, maquetación con asistencia de IA. Sin spoilers.",
-      role: "Ideación, dirección y construcción con asistencia de IA",
+        "Pipeline editorial para mi novela El Markot: Typst (contenido separado de metadata/plantilla) y scripts Python para importar EPUB y compilar. Une worldbuilding con tooling; yo escribo la historia y armo la maquetación con asistencia de IA. Sin spoilers.",
+      role: "Ideé, dirigí y construí con asistencia de IA",
       tech: ["Typst", "Python"],
       status: "Libro estructurado completo; builds locales",
       links: [],

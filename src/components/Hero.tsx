@@ -15,7 +15,7 @@ export function Hero() {
               alt={content.name}
               width={160}
               height={160}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover object-top"
               priority
             />
           </div>

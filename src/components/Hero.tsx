@@ -15,7 +15,7 @@ export function Hero() {
               alt={content.name}
               width={160}
               height={160}
-              className="h-full w-full object-contain object-center bg-zinc-800"
+              className="h-full w-full object-cover object-[center_15%]"
               priority
             />
           </div>

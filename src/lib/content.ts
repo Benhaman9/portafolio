@@ -160,7 +160,7 @@ export const content: SiteContent = {
           label: "APK",
           href: "https://github.com/CotidieApp/cotidie-web/releases/latest/download/cotidie-latest.apk",
         },
-        { label: "Sitio", href: "https://github.com/CotidieApp/cotidie-web" },
+        { label: "Sitio", href: "https://cotidieapp.github.io/cotidie-web/" },
         { label: "App", href: "https://github.com/CotidieApp/pwa" },
         { label: "Novum", href: "https://github.com/CotidieApp/cotidie-novum" },
       ],

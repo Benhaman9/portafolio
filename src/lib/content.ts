@@ -38,6 +38,9 @@ export type SiteContent = {
     github: string;
     instagram?: string;
   };
+  education: { title: string; org: string; when: string }[];
+  skills: string[];
+  skillsNote: string;
   projects: Project[];
   nav: { id: string; label: string }[];
   sections: {
@@ -52,6 +55,7 @@ export type SiteContent = {
     privateProject: string;
     emailCta: string;
     footerNote: string;
+    skillsTitle: string;
   };
 };
 
@@ -78,6 +82,36 @@ export const content: SiteContent = {
     github: "https://github.com/Benhaman9",
     instagram: "https://www.instagram.com/benja_alcalde/",
   },
+  education: [
+    {
+      title: "Ingeniería Comercial",
+      org: "Universidad de los Andes",
+      when: "Ingreso 2026",
+    },
+    {
+      title: "Enseñanza media",
+      org: "Colegio Cordillera",
+      when: "Santiago, Chile",
+    },
+  ],
+  skills: [
+    "JavaScript / Node",
+    "Python",
+    ".NET / C#",
+    "Flutter",
+    "FastAPI",
+    "Next.js / React",
+    "TypeScript",
+    "Capacitor",
+    "Typst",
+    "Obsidian",
+    "Git",
+    "Postgres",
+    "Docker",
+    "SQLite",
+  ],
+  skillsNote:
+    "Uso guiado con asistencia de IA: dirijo el diseño y valido el resultado.",
   nav: [
     { id: "sobre", label: "Sobre mí" },
     { id: "proyectos", label: "Proyectos" },
@@ -96,6 +130,7 @@ export const content: SiteContent = {
     privateProject: "Proyecto privado",
     emailCta: "Enviar correo",
     footerNote: "Construido con Next.js · Santiago, Chile",
+    skillsTitle: "Herramientas",
   },
   projects: [
     {

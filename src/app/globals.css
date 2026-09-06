@@ -1,10 +1,47 @@
 @import "tailwindcss";
 
+:root {
+  --bg: #0f1b2d;
+  --bg2: #13233b;
+  --card: #17293f;
+  --line: #26405e;
+  --ink: #eaf1f9;
+  --muted: #9db2ca;
+  --teal: #2dd4bf;
+  --accent: #2dd4bf;
+  --chip: #1d3350;
+  --btn-ink: #04121f;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f5f8fc;
+    --bg2: #eef3f9;
+    --card: #ffffff;
+    --line: #dbe4ef;
+    --ink: #132338;
+    --muted: #4d637f;
+    --teal: #0d9488;
+    --accent: #0d9488;
+    --chip: #e7f0fa;
+    --btn-ink: #04121f;
+  }
+}
+
 @theme {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --color-accent: #38bdf8;
-  --color-accent-soft: color-mix(in oklab, var(--color-accent) 18%, transparent);
+  --color-navy: var(--bg);
+  --color-navy-2: var(--bg2);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-teal: var(--teal);
+  --color-chip: var(--chip);
+  --color-btn-ink: var(--btn-ink);
+  --color-accent-soft: color-mix(in srgb, var(--accent) 18%, transparent);
 }
 
 html {
@@ -12,18 +49,88 @@ html {
 }
 
 body {
-  @apply bg-zinc-950 text-zinc-100 antialiased;
-  background-image:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(56, 189, 248, 0.12), transparent),
-    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(113, 113, 122, 0.08), transparent);
+  background: var(--bg);
+  color: var(--ink);
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      color-mix(in srgb, var(--accent) 14%, transparent),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 100% 0%,
+      color-mix(in srgb, var(--line) 35%, transparent),
+      transparent
+    );
 }
 
 ::selection {
-  background: color-mix(in oklab, var(--color-accent) 35%, transparent);
-  color: white;
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+  color: var(--ink);
 }
 
 a {
   @apply transition-colors;
+}
+
+.section-heading {
+  @apply text-2xl font-semibold tracking-tight sm:text-3xl;
+  color: var(--ink);
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin-top: 0.65rem;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.625rem;
+  background: var(--accent);
+  color: var(--btn-ink);
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.625rem;
+  background: transparent;
+  color: var(--ink);
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+}
+
+.btn-ghost:hover {
+  background: color-mix(in srgb, var(--card) 80%, transparent);
+}
+
+.tech-chip {
+  display: inline-block;
+  background: var(--chip);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--ink);
 }

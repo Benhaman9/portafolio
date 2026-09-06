@@ -65,13 +65,13 @@ export const content: SiteContent = {
   portrait: "/images/hero-avatar-v2.jpg",
   location: "Santiago, Chile",
   role:
-    "Estudiante de Ingeniería Comercial (Universidad de los Andes, ingreso 2026) · tecnología, programación y escritura",
+    "Estudiante de Ingeniería Comercial (Universidad de los Andes, ingreso 2026) · tecnología, producto digital y escritura",
   availability:
     "Disponibilidad híbrida/presencial; medio tiempo en semestre, tiempo completo en vacaciones",
   shortBio:
-    "Soy estudiante chileno interesado en tecnología, programación y escritura. Me gusta construir proyectos, automatizar tareas y explorar cómo las herramientas digitales resuelven problemas de forma práctica.",
+    "Soy estudiante chileno interesado en tecnología, escritura y en construir herramientas digitales. No programo de memoria: desarrollo con asistencia de IA, automatizo tareas y exploro cómo esas herramientas resuelven problemas de forma práctica.",
   aiFraming:
-    "Todavía no programo “de memoria” como un ingeniero de software tradicional: estudio Ingeniería Comercial y construyo software dirigiendo ideas con asistencia de IA. Este portafolio muestra productos reales —apps, APIs, pipelines— donde yo defino el problema, la experiencia y el criterio, y colaboro con modelos para convertir eso en herramientas que uso de verdad.",
+    "No sé programar como un ingeniero de software: no escribo código “de memoria”. Estudio Ingeniería Comercial y desarrollo productos digitales dirigiendo la idea, la experiencia y el criterio, con asistencia de IA para implementar. Este portafolio muestra cosas reales —apps, APIs, pipelines— que uso de verdad.",
   aiSubtitle:
     "Aprendo construyendo: ideo, dirijo y valido; la IA me ayuda a implementar.",
   projectRoleLine: "Ideé, dirigí y construí con asistencia de IA",

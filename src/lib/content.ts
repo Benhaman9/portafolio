@@ -58,7 +58,7 @@ export type SiteContent = {
 export const content: SiteContent = {
   name: "Benjamín Alcalde",
   initials: "BA",
-  portrait: "/images/hero-avatar.jpg",
+  portrait: "/images/hero-avatar-v2.jpg",
   location: "Santiago, Chile",
   role:
     "Estudiante de Ingeniería Comercial (Universidad de los Andes, ingreso 2026) · tecnología, programación y escritura",
